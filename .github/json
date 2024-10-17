@@ -1,0 +1,6 @@
+{
+  "version": "2024-10-16",
+  "assistant_id": "your-assistant-id",
+  "api_key": "your-watson-api-key",
+  "url": "https://api.us-south.assistant.watson.cloud.ibm.com"
+}
