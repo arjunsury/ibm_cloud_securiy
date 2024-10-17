@@ -1,0 +1,18 @@
+/chatbot-solution
+   /src
+      /intents             
+      /entities              # Directory for entity recognition models
+      /actions               # Custom actions and responses for chatbot interactions
+   /data
+      /training_data         # Training datasets for AI and NLP models
+   /config
+      /watsonx-ai-config     # Configuration files for IBM watsonx.ai integration
+      /api-config            # Configuration for API services (IBM API Connect)
+   /tests
+      /unit_tests            # Unit tests for chatbot functionality
+      /integration_tests     # Tests for API and cloud service integrations
+   /docs
+      /user_manual.md        # User documentation for installing and running the chatbot
+      /setup_guide.md        # Setup guide for environment configuration
+   /LICENSE
+   /README.md                # Overview and instructions for the chatbot project
