@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: chatbot-pipeline
+spec:
+  tasks:
+  - name: build-chatbot
+    taskRef:
+      name: build
+  - name: deploy-chatbot
+    taskRef:
+      name: deploy
