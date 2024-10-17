@@ -1,0 +1,11 @@
+String clientId = "yourClientId";
+String clientSecret = "yourClientSecret";
+String authUrl = "https://oauth2.example.com/token";
+
+String token = getAccessToken(clientId, clientSecret, authUrl);
+
+// Use token in API requests
+String apiUrl = "https://secure-api.example.com/data";
+URL url = new URL(apiUrl);
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+connection.setRequestProperty("Authorization", "Bearer " + token);
