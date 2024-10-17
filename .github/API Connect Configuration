@@ -1,0 +1,6 @@
+{
+  "basePath": "/api",
+  "serverUrl": "https://api.us-south.apiconnect.ibmcloud.com",
+  "apiKey": "your-api-connect-key",
+  "version": "1.0"
+}
