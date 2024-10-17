@@ -1,0 +1,12 @@
+String apiUrl = "https://secure-api.example.com/data";
+URL url = new URL(apiUrl);
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+connection.setRequestMethod("GET");
+connection.setConnectTimeout(5000); // 5 seconds
+connection.setReadTimeout(5000);
+connection.setRequestProperty("Authorization", "Bearer " + secureToken); // Secure API token
+connection.setRequestProperty("Content-Type", "application/json");
+connection.setSSLSocketFactory(getSecureSocketFactory());
+int responseCode = connection.getResponseCode();
+if (responseCode == HttpsURLConnection.HTTP_OK) {
+}
